@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <servlet>
+  	<servlet-name>addServlet</servlet-name>
+  	<servlet-class>com.auto.web.AddServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>addServlet</servlet-name>
+  	<url-pattern>/add.do</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>addDeptServlet</servlet-name>
+  	<servlet-class>com.auto.web.AddDeptServlet</servlet-class>
+  </servlet>
+   <servlet-mapping>
+  	<servlet-name>addDeptServlet</servlet-name>
+  	<url-pattern>/addDept.do</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+  	<servlet-name>addEmpServlet</servlet-name>
+  	<servlet-class>com.auto.web.AddEmpServlet</servlet-class>
+  </servlet>
+   <servlet-mapping>
+  	<servlet-name>addEmpServlet</servlet-name>
+  	<url-pattern>/addEmp.do</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+ 		<servlet-name>findAllDept</servlet-name>
+ 		<servlet-class>com.auto.web.FindAllDeptServlet</servlet-class>
+ 	</servlet>
+ 	<servlet-mapping>
+ 		<servlet-name>findAllDept</servlet-name>
+ 		<url-pattern>/findAllDept.do</url-pattern>
+ 	</servlet-mapping>
+ 	
+ 	
+ 	<servlet>
+ 		<servlet-name>emp</servlet-name>
+ 		<servlet-class>com.auto.web.FindAllEmpServlet</servlet-class>
+ 	</servlet>
+ 	<servlet-mapping>
+ 		<servlet-name>emp</servlet-name>
+ 		<url-pattern>/findAllEmp.do</url-pattern>
+ 	</servlet-mapping>
+ 	
+ 	<servlet>
+ 		<servlet-name>delDept</servlet-name>
+ 		<servlet-class>com.auto.web.DelDeptServlet</servlet-class>
+ 	</servlet>
+ 	<servlet-mapping>
+ 		<servlet-name>delDept</servlet-name>
+ 		<url-pattern>/delDept.do</url-pattern>
+ 	</servlet-mapping>
+ 	
+ 	<servlet>
+ 		<servlet-name>toUpdateDept</servlet-name>
+ 		<servlet-class>com.auto.web.ToUpdateDeptServlet</servlet-class>
+ 	</servlet>
+ 	<servlet-mapping>
+ 		<servlet-name>toUpdateDept</servlet-name>
+ 		<url-pattern>/toUpdateDept.do</url-pattern>
+ 	</servlet-mapping>
+ 	
+ 	<servlet>
+ 		<servlet-name>toUpdateEmp</servlet-name>
+ 		<servlet-class>com.auto.web.ToUpdateEmpServlet</servlet-class>
+ 	</servlet>
+ 	<servlet-mapping>
+ 		<servlet-name>toUpdateEmp</servlet-name>
+ 		<url-pattern>/toUpdateEmp.do</url-pattern>
+ 	</servlet-mapping>
+ 	
+ 	<servlet>
+ 		<servlet-name>updateDept</servlet-name>
+ 		<servlet-class>com.auto.web.UpdateDeptServlet</servlet-class>
+ 	</servlet>
+ 	<servlet-mapping>
+ 		<servlet-name>updateDept</servlet-name>
+ 		<url-pattern>/updateDept.do</url-pattern>
+ 	</servlet-mapping>
+</web-app>
